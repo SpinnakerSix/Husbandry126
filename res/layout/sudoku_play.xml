@@ -8,13 +8,13 @@
 	    android:layout_width="fill_parent"
 	    android:layout_height="fill_parent"
 	    android:gravity="center_horizontal">
-		<cz.romario.opensudoku.gui.SudokuBoardView
+		<in.sudoku.gui.SudokuBoardView
 			android:id="@+id/sudoku_board"
 		    android:layout_width="fill_parent"
 		    android:layout_height="wrap_content"
 		    android:keepScreenOn="true"
 		     />
-		<cz.romario.opensudoku.gui.inputmethod.IMControlPanel
+		<in.sudoku.gui.inputmethod.IMControlPanel
 			android:id="@+id/input_methods"
 		    android:layout_width="fill_parent"
 		    android:layout_height="fill_parent" />
