@@ -27,6 +27,7 @@ import in.sudoku.game.FolderInfo;
 import in.sudoku.gui.FolderDetailLoader.FolderDetailCallback;
 import in.sudoku.utils.AndroidUtils;
 import android.app.AlertDialog;
+import android.app.AlertDialog.Builder;
 import android.app.Dialog;
 import android.app.ListActivity;
 import android.content.ComponentName;
@@ -49,6 +50,7 @@ import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
 import android.widget.SimpleCursorAdapter.ViewBinder;
 import android.widget.TextView;
+
 
 /**
  * List of puzzle's folder. This activity also serves as root activity of application.
@@ -83,10 +85,14 @@ public class FolderListActivity extends ListActivity {
     private long mRenameFolderID; 
     private long mDeleteFolderID;
     
+    
     @Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		
+		
 
+		
 		setContentView(R.layout.folder_list);
 		View getMorePuzzles = (View)findViewById(R.id.get_more_puzzles);
 		
@@ -102,6 +108,16 @@ public class FolderListActivity extends ListActivity {
 				startActivity(intent);
 			}
 		});
+		
+		Builder builder = new AlertDialog.Builder(this);
+		builder.setTitle("It's your first time playing!");
+		builder.setIcon(R.drawable.coke);
+		builder.setMessage("Have a free coke on us!");
+		builder.setPositiveButton("Redeem!", null);
+		builder.setNegativeButton("cancel", null);
+		builder.show();
+		
+		
 		
 		mDatabase = new SudokuDatabase(getApplicationContext());
 		mCursor = mDatabase.getFolderList();
@@ -401,6 +417,7 @@ public class FolderListActivity extends ListActivity {
 			mDetailLoader.destroy();
 		}
 	}
-	
+
+
 	
 }

@@ -200,9 +200,9 @@ containing a value of this type.
         public static final int im_number_button_selected_background=0x7f080001;
     }
     public static final class drawable {
-        public static final int android_orange=0x7f020018;
-        public static final int android_yellow=0x7f020019;
-        public static final int black=0x7f02001a;
+        public static final int android_orange=0x7f020019;
+        public static final int android_yellow=0x7f02001a;
+        public static final int black=0x7f02001b;
         public static final int btn_completed_bg=0x7f020000;
         public static final int btn_completed_normal=0x7f020001;
         public static final int btn_completed_normal_disable=0x7f020002;
@@ -220,14 +220,15 @@ containing a value of this type.
         public static final int btn_toggle_on=0x7f02000e;
         public static final int button_bar_gradient=0x7f02000f;
         public static final int button_black_rounded_out=0x7f020010;
-        public static final int empty=0x7f020011;
-        public static final int ic_launcher=0x7f020012;
-        public static final int opensudoku_logo_72=0x7f020013;
-        public static final int pencil=0x7f020014;
-        public static final int pencil_disabled=0x7f020015;
-        public static final int pencil_license=0x7f020016;
-        public static final int red=0x7f02001b;
-        public static final int white=0x7f020017;
+        public static final int coke=0x7f020011;
+        public static final int empty=0x7f020012;
+        public static final int ic_launcher=0x7f020013;
+        public static final int opensudoku_logo_72=0x7f020014;
+        public static final int pencil=0x7f020015;
+        public static final int pencil_disabled=0x7f020016;
+        public static final int pencil_license=0x7f020017;
+        public static final int red=0x7f02001c;
+        public static final int white=0x7f020018;
     }
     public static final class id {
         public static final int button_1=0x7f090005;

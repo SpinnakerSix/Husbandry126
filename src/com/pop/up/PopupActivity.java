@@ -10,22 +10,22 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.pop.view.TransparentPanel;
-
-
+import com.pop.up.PopupWindow;
 
 public class PopupActivity extends Activity {
 
 	private Animation animShow, animHide;
-
+	PopupWindow popup = new PopupWindow();
+	
 	public void onCreate(Bundle icicle) {
 
 		super.onCreate(icicle);
-
+		
 		setContentView(R.layout.popup);
 
-		initPopup();
+		popup.Popup();
 	}
-
+/*
 	private void initPopup() {
 
 		final TransparentPanel popup = (TransparentPanel) findViewById(R.id.popup_window);
@@ -63,5 +63,5 @@ public class PopupActivity extends Activity {
 		locationDescription
 				.setText("The second Android Developer Challenge has begun! In this contest, real-world users will help review and score applications"						
 						+ "and the overall winner will take away $250,000. The deadline for submitting an application to the contest is August 31, 2009.");
-	}
+	}*/
 }
