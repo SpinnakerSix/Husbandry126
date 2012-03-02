@@ -67,5 +67,12 @@
 	        		android:layout_margin="5px"/>
         
 	</com.pop.view.TransparentPanel>
+	
+	<Button
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:text="@string/linkMail"
+                android:onClick="linkEmailClicked"
+                android:singleLine="true"/>
 		
 </LinearLayout>

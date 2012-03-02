@@ -166,4 +166,9 @@
 	<string name="set_checkpoint">Set checkpoint</string>
 	<string name="undo_to_checkpoint">Undo to checkpoint</string>
 	<string name="undo_to_checkpoint_confirm">Are you sure you want to undo all actions since last checkpoint?</string>
+	
+	<!-- Strings added/changed in PopUp -->
+	<string name="linkMail">Send Email</string>
+	<string name="emailAddress">hanqijing@gmail.com</string>
+	
 </resources>

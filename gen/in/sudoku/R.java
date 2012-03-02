@@ -331,6 +331,7 @@ containing a value of this type.
         public static final int edit_puzzle=0x7f0a0030;
         public static final int edit_sudoku=0x7f0a0001;
         public static final int email=0x7f0a0005;
+        public static final int emailAddress=0x7f0a0089;
         public static final int export=0x7f0a0068;
         public static final int export_all_folders=0x7f0a006a;
         public static final int export_folder=0x7f0a0069;
@@ -381,6 +382,9 @@ containing a value of this type.
         public static final int input_methods=0x7f0a0040;
         public static final int invalid_format=0x7f0a0060;
         public static final int last_played_at=0x7f0a0023;
+        /**  Strings added/changed in PopUp 
+         */
+        public static final int linkMail=0x7f0a0088;
         /**  Strings added in 0.7.0 
  Strings added in 0.7.0 
  Strings added in 0.7.0 
