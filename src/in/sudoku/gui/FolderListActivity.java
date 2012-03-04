@@ -119,24 +119,6 @@ public class FolderListActivity extends ListActivity {
 
 		/* popup */
 
-		Intent emailIntent = new Intent(android.content.Intent.ACTION_SEND);  
-		emailIntent.setType("plain/text");  
-		String aEmailList[] = { "user@fakehost.com","user2@fakehost.com" };
-		String aEmailCCList[] = { "user3@fakehost.com","user4@fakehost.com"};
-		String aEmailBCCList[] = { "user5@fakehost.com" };
-
-		emailIntent.putExtra(android.content.Intent.EXTRA_EMAIL, aEmailList);
-		emailIntent.putExtra(android.content.Intent.EXTRA_CC, aEmailCCList);
-		emailIntent.putExtra(android.content.Intent.EXTRA_BCC, aEmailBCCList);
-
-		emailIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "My subject");
-
-		emailIntent.setType("plain/text");
-		emailIntent.putExtra(android.content.Intent.EXTRA_TEXT, "My message body.");
-
-
-
-
 		// Set an EditText view to get user input 
 		final EditText input = new EditText(this);
 
@@ -188,7 +170,7 @@ public class FolderListActivity extends ListActivity {
 
 		builder.setNegativeButton("cancel", null);
 		builder.setView(input);
-		builder.show();
+		//builder.show();
 
 
 
