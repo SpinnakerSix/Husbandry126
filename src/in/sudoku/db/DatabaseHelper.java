@@ -397,6 +397,15 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         	n++;
         	i++;
         }
+        
+        insertFolder(db,4,mContext.getString(R.string.difficulty_veryhard));
+        while (n < 401){
+        	int i = 0;
+        	String str = "VeryHard" + n;
+        	insertSudoku(db, 4, n, str,veryhard_nums[i]);
+        	n++;
+        	i++;
+        }
     
         
         /*
