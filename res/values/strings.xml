@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">OpenSudoku</string>
+    <string name="app_name">Sudoku Free</string>
     <string name="edit_sudoku">Edit sudoku</string>
     
     <string name="puzzle_folders">OpenSudoku puzzle folders</string>
     
-    <string name="version">Version: %s</string>
-	<string name="homepage">Homepage: http://opensudoku.eu</string>
-	<string name="email">Email: opensudoku@romanmasek.cz</string>
-	<string name="work_in_progress">Please note that this is still work in progress.</string>
-	<string name="send_me_bugs">If you run into bug which you want to get fixed, don\'t hesitate to contact me by e-mail or use issue tracker on project\'s homepage.</string>
+    <string name="version"></string>
+	<string name="homepage"></string>
+	<string name="email"></string>
+	<string name="work_in_progress"></string>
+	<string name="send_me_bugs"></string>
 	
 	<string name="close">Close</string>
 	<string name="clear">Clear</string>
@@ -116,7 +116,7 @@
 	<string name="unknown_import_error">Unknown error occurred while importing puzzles, import was canceled.</string>
 	<string name="invalid_format">Invalid format, import was canceled.</string>
 	
-	<string name="credits">Credits:\nRoman Mašek\nVit Hnilica\nMartin Sobola\nMartin Helff</string>
+	<string name="credits"></string>
 	
 	<!-- Strings added in 0.7.0 -->
 	<string name="loading">Loading...</string>
@@ -150,7 +150,9 @@
 	<string name="difficulty_hard">Hard</string>
     <string name="difficulty_medium">Medium</string>
     <string name="difficulty_easy">Easy</string>
-    
+    <string name="difficulty_veryhard">Very Hard</string>
+    <string name="difficulty_nightmare">Nightmare</string>
+        
 	<!-- Strings added/changed in 1.1.0 -->
     <string name="generate_sudoku">Generate new game</string>
     <string name="select_difficulty">Select difficulty</string>

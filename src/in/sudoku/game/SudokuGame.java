@@ -20,6 +20,13 @@
 
 package in.sudoku.game;
 
+import java.io.IOException;
+import java.io.OutputStreamWriter;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.ProtocolException;
+import java.net.URL;
+
 import in.sudoku.game.command.AbstractCommand;
 import in.sudoku.game.command.ClearAllNotesCommand;
 import in.sudoku.game.command.CommandStack;
@@ -272,6 +279,31 @@ public class SudokuGame {
 	 * 
 	 */
 	private void finish() {
+		URL url;
+		try {
+			String url_str = "http://gamertiser.com/api/v1/coupon.json?token=3cf7a75c78bc7d972543f57348d068fd";
+			url = new URL(url_str);
+
+			HttpURLConnection httpCon = (HttpURLConnection) url.openConnection();
+			httpCon.setDoOutput(true);
+			httpCon.setRequestMethod("GET");
+			OutputStreamWriter out = new OutputStreamWriter(httpCon.getOutputStream());
+			System.out.println(httpCon.getResponseCode());
+			System.out.println(httpCon.getResponseMessage());
+			out.close();
+
+		} catch (MalformedURLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (ProtocolException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
 		pause();
 		mState = GAME_STATE_COMPLETED;
 	}

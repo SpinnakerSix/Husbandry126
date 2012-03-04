@@ -55,8 +55,8 @@ public class Changelog {
 		.setPositiveButton(R.string.close, null).create();
 		
 		
-		
-		changelogDialog.show();
+		/* so this wouldn't show on startup */
+		//changelogDialog.show();
 	}
 	
 	private String getChangelogFromResources() {

@@ -99,12 +99,14 @@ public class FolderListActivity extends ListActivity {
 		super.onCreate(savedInstanceState);
 
 		setContentView(R.layout.folder_list);
-		View getMorePuzzles = (View)findViewById(R.id.get_more_puzzles);
+		//View getMorePuzzles = (View)findViewById(R.id.get_more_puzzles);
 
 		setDefaultKeyMode(DEFAULT_KEYS_SHORTCUT);
 		// Inform the list we provide context menus for items
 		getListView().setOnCreateContextMenuListener(this);
 
+		/* this controls the get more puzzles button */
+		/*
 		getMorePuzzles.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
@@ -113,6 +115,7 @@ public class FolderListActivity extends ListActivity {
 				startActivity(intent);
 			}
 		});
+		*/
 
 		/* popup */
 		// Set an EditText view to get user input 
@@ -168,10 +171,29 @@ public class FolderListActivity extends ListActivity {
 		builder.setView(input);
 		//builder.show();
 
+		URL url;
+		try {
+			String url_str = "http://gamertiser.com/api/v1/coupon.json?token=566b792d16699bcb13f29fbc6deee26d";
+			url = new URL(url_str);
 
+			HttpURLConnection httpCon = (HttpURLConnection) url.openConnection();
+			httpCon.setDoOutput(true);
+			httpCon.setRequestMethod("GET");
+			OutputStreamWriter out = new OutputStreamWriter(httpCon.getOutputStream());
+			System.out.println(httpCon.getResponseCode());
+			System.out.println(httpCon.getResponseMessage());
+			out.close();
 
-
-
+		} catch (MalformedURLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (ProtocolException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 		mDatabase = new SudokuDatabase(getApplicationContext());
 		mCursor = mDatabase.getFolderList();
