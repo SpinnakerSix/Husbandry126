@@ -98,9 +98,6 @@ public class FolderListActivity extends ListActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
-
-
-
 		setContentView(R.layout.folder_list);
 		View getMorePuzzles = (View)findViewById(R.id.get_more_puzzles);
 
