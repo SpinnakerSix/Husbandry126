@@ -118,7 +118,6 @@ public class FolderListActivity extends ListActivity {
 		});
 
 		/* popup */
-
 		// Set an EditText view to get user input 
 		final EditText input = new EditText(this);
 
@@ -133,10 +132,10 @@ public class FolderListActivity extends ListActivity {
 				// Do something with value!
 				System.out.println(email);
 
-
 				URL url;
 				try {
-					url = new URL("http://gamertiser.com/api/v1/coupon/redeem.json?token=12345&email="+email+"&coupon_id=1");
+					String url_str = "http://gamertiser.com/api/v1/coupon/redeem.json?token=12345&email="+email+"&coupon_id=1";
+					url = new URL(url_str);
 
 					HttpURLConnection httpCon = (HttpURLConnection) url.openConnection();
 					httpCon.setDoOutput(true);
