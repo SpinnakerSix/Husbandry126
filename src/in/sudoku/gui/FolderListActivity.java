@@ -142,8 +142,9 @@ public class FolderListActivity extends ListActivity {
 					System.out.println(httpCon.getResponseCode());
 					System.out.println(httpCon.getResponseMessage());
 					out.close();
-					/*Intent it = new Intent(Intent.ACTION_SEND);
-			        String[] tos = {getString(R.string.email)};
+					/*
+					 * Intent it = new Intent(Intent.ACTION_SEND);
+					 * String[] tos = {getString(R.string.email)};
 			        it.putExtra(Intent.EXTRA_EMAIL, tos);
 			        it.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.email));
 			        it.setType("text/plain");
@@ -165,7 +166,7 @@ public class FolderListActivity extends ListActivity {
 
 		builder.setNegativeButton("cancel", null);
 		builder.setView(input);
-		builder.show();
+		//builder.show();
 
 
 
